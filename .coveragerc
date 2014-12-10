@@ -1,0 +1,21 @@
+# this file is based on the examples provided in burrito's and scikit-bio's .coveragerc
+# see licenses/burrito.txt and licenses/scikit-bio.txt for more details
+
+[run]
+omit =
+    */tests*
+    */__init__.py
+source = qiime_default_reference
+branch = True
+include = */qiime_default_reference/*
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    raise NotImplementedError
+    if __name__ == .__main__.:
+omit =
+    */tests*
+    */__init__.py
+
