@@ -1,12 +1,9 @@
 include LICENSE
 include README.rst
+exclude *.fasta *.txt
 
 graft licenses
 graft qiime_default_reference
-
-prune qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
-prune qiime_default_reference/gg_13_8_otus/rep_set_aligned/85_otus.fasta
-prune qiime_default_reference/gg_13_8_otus/taxonomy/97_otu_taxonomy.txt
 
 global-exclude *.pyc
 global-exclude *.pyo
