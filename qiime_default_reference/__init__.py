@@ -1,7 +1,7 @@
 import hashlib
 import os.path
 
-__version__ = "0.1.0"
+__version__ = "0.1.0-dev"
 
 def get_reference_sequences():
     """Return absolute filepath to default reference sequences.
