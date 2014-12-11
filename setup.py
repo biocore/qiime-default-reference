@@ -14,7 +14,7 @@ from setuptools import find_packages, setup
 preprocess_data = all([e not in sys.argv
                        for e in 'egg_info', 'sdist', 'register'])
 
-__version__ = "0.1.1"
+__version__ = "0.1.1-dev"
 
 classes = """
     Development Status :: 3 - Alpha
