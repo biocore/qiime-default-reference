@@ -1,0 +1,8 @@
+include LICENSE
+include README.rst
+
+graft licenses
+graft qiime_default_reference
+
+global-exclude *.pyc
+global-exclude *.pyo
