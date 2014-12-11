@@ -1,0 +1,15 @@
+# Copied and modified from
+# https://github.com/biocore/burrito/blob/master/.travis.yml
+# See licenses/burrito.txt for more details.
+
+# Check on http://lint.travis-ci.org/ after modifying it!
+language: python
+python:
+  - "2.7"
+install:
+  - pip install nose coveralls
+  - pip install .
+script:
+  - nosetests --with-coverage --with-doctest
+after_success:
+  - coveralls
