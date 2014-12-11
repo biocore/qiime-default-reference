@@ -1,6 +1,5 @@
 include LICENSE
 include README.rst
-exclude *.fasta *.txt
 
 graft licenses
 graft qiime_default_reference
