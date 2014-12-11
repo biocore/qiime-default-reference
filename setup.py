@@ -9,11 +9,12 @@ import gzip
 import os.path
 from setuptools import find_packages, setup
 
-# if egg_info is passed as an argument do not preprocess (e.g., decompress) any
-# data
-preprocess_data = 'egg_info' not in sys.argv and 'sdist' not in sys.argv
+# don't preprocess (e.g., decompress) any data if the following modes are
+# invoked
+preprocess_data = all([e not in sys.argv
+                       for e in 'egg_info', 'sdist', 'register'])
 
-__version__ = "0.1.0"
+__version__ = "0.1.0-dev"
 
 classes = """
     Development Status :: 3 - Alpha
