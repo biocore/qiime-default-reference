@@ -10,8 +10,7 @@ install:
   - pip install nose coveralls
   - pip install .
 script:
-  - python qiime_default_reference/tests/test_init.py
-#script:
-#  - nosetests --with-coverage --with-doctest
-#after_success:
-#  - coveralls
+  - cd
+  - nosetests --with-coverage --with-doctest
+after_success:
+  - coveralls
