@@ -51,6 +51,7 @@ if preprocess_data:
     sys.stdout.write("Decompressing reference data files:\n")
     gunzip(os.path.join(gg_path_prefix, 'rep_set', '97_otus.fasta.gz'))
     gunzip(os.path.join(gg_path_prefix, 'taxonomy', '97_otu_taxonomy.txt.gz'))
+    gunzip(os.path.join(gg_path_prefix, 'trees', '97_otus.tree.gz'))
     gunzip(os.path.join(gg_path_prefix, 'rep_set_aligned', '85_otus.fasta.gz'))
 
 setup(
@@ -69,7 +70,7 @@ setup(
     extras_require={'test': ['nose']},
     classifiers=classifiers,
     package_data={
-        gg_module_prefix : ['rep_set/*.fasta', 'taxonomy/*.txt',
+        gg_module_prefix : ['rep_set/*.fasta', 'taxonomy/*.txt', 'trees/*.tree',
                             'rep_set_aligned/*.fasta']
     }
 )

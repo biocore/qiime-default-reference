@@ -3,8 +3,9 @@ import unittest
 from StringIO import StringIO
 
 from qiime_default_reference import (
-    get_reference_sequences, get_reference_taxonomy, get_template_alignment,
-    get_template_alignment_column_mask, safe_md5, _get_reference_data)
+    get_reference_sequences, get_reference_taxonomy, get_reference_tree,
+    get_template_alignment, get_template_alignment_column_mask, safe_md5,
+    _get_reference_data)
 
 
 class TestInit(unittest.TestCase):
@@ -29,6 +30,17 @@ class TestInit(unittest.TestCase):
         with open(fp, 'rb') as f:
             md5 = safe_md5(f).hexdigest()
         self.assertEqual(md5, '56ef15dccf2e931ec173f4f977ed649b')
+
+    def test_get_reference_tree(self):
+        fp = get_reference_tree()
+        self.assertIn(
+            os.path.join('gg_13_8_otus', 'trees', '97_otus.tree'), fp)
+        self.assertTrue(os.path.isfile(fp))
+        self.assertTrue(os.path.isabs(fp))
+
+        with open(fp, 'rb') as f:
+            md5 = safe_md5(f).hexdigest()
+        self.assertEqual(md5, 'b7e76593bce82913af1cfb06edf15732')
 
     def test_get_template_alignment(self):
         fp = get_template_alignment()

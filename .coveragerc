@@ -4,7 +4,6 @@
 [run]
 omit =
     */tests*
-    */__init__.py
 source = qiime_default_reference
 branch = True
 include = */qiime_default_reference/*
@@ -17,5 +16,3 @@ exclude_lines =
     if __name__ == .__main__.:
 omit =
     */tests*
-    */__init__.py
-

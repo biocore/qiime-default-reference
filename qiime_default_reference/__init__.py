@@ -22,6 +22,14 @@ def get_reference_taxonomy():
     return _get_reference_data(
         'gg_13_8_otus', 'taxonomy', '97_otu_taxonomy.txt')
 
+def get_reference_tree():
+    """Return absolute filepath to default reference tree.
+
+    Current default is a phylogenetic tree built from Greengenes 13_8 97% OTU
+    aligned representative sequences.
+
+    """
+    return _get_reference_data('gg_13_8_otus', 'trees', '97_otus.tree')
 
 def get_template_alignment():
     """Return absolute filepath to default template alignment.
