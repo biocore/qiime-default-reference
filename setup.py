@@ -11,7 +11,7 @@ from setuptools import find_packages, setup
 
 # if egg_info is passed as an argument do not preprocess (e.g., decompress) any
 # data
-preprocess_data = 'egg_info' not in sys.argv
+preprocess_data = 'egg_info' not in sys.argv and 'sdist' not in sys.argv
 
 __version__ = "0.1.0"
 
