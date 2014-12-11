@@ -20,7 +20,7 @@ Running the tests
 -----------------
 To run qiime-default-reference's unit tests::
 
-    nosetests --with-doctest
+    nosetests --with-doctest qiime_default_reference
 
 Attribution
 ^^^^^^^^^^^
