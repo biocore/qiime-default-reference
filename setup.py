@@ -13,7 +13,7 @@ from setuptools import find_packages, setup
 # data
 preprocess_data = 'egg_info' not in sys.argv
 
-__version__ = "0.1.0-dev"
+__version__ = "0.1.0"
 
 classes = """
     Development Status :: 3 - Alpha
