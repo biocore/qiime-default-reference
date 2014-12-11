@@ -1,20 +1,34 @@
 import hashlib
 import os.path
 
-
 __version__ = "0.1.0-dev"
 
-
 def get_reference_sequences():
+    """Return absolute filepath to default reference sequences.
+
+    Current default is Greengenes 13_8 97% OTU representative sequences.
+
+    """
     return _get_reference_data('gg_13_8_otus', 'rep_set', '97_otus.fasta')
 
 
 def get_reference_taxonomy():
+    """Return absolute filepath to default reference taxonomy.
+
+    Current default is Greengenes 13_8 97% OTU representative sequence taxonomic
+    assignments.
+
+    """
     return _get_reference_data(
         'gg_13_8_otus', 'taxonomy', '97_otu_taxonomy.txt')
 
 
 def get_template_alignment():
+    """Return absolute filepath to default template alignment.
+
+    Current default is Greengenes 13_8 85% OTU aligned representative sequences.
+
+    """
     return _get_reference_data(
         'gg_13_8_otus', 'rep_set_aligned', '85_otus.fasta')
 

@@ -8,6 +8,19 @@ Python package containing default reference data files for use with
 `QIIME <http://qiime.org/>`_. The current default reference data is compiled
 from the Greengenes 16S rRNA database version
 `13_8 <ftp://greengenes.microbio.me/greengenes_release/gg_13_5/gg_13_8_otus.tar.gz>`_.
+Please see the **Attribution** section below for more details.
+
+Installation
+------------
+To install qiime-default-reference::
+
+    pip install qiime-default-reference
+
+Running the tests
+-----------------
+To run qiime-default-reference's unit tests::
+
+    nosetests --with-doctest qiime_default_reference
 
 Attribution
 ^^^^^^^^^^^
