@@ -52,7 +52,7 @@ if preprocess_data:
     gunzip(os.path.join(gg_path_prefix, 'rep_set', '97_otus.fasta.gz'))
     gunzip(os.path.join(gg_path_prefix, 'taxonomy', '97_otu_taxonomy.txt.gz'))
     gunzip(os.path.join(gg_path_prefix, 'trees', '97_otus.tree.gz'))
-    gunzip(os.path.join(gg_path_prefix, 'rep_set_aligned', '85_otus.fasta.gz'))
+    gunzip(os.path.join(gg_path_prefix, 'rep_set_aligned', '85_otus.pynast.fasta.gz'))
 
 setup(
     name='qiime-default-reference',

@@ -45,7 +45,7 @@ class TestInit(unittest.TestCase):
     def test_get_template_alignment(self):
         fp = get_template_alignment()
         self.assertIn(
-            os.path.join('gg_13_8_otus', 'rep_set_aligned', '85_otus.fasta'),
+            os.path.join('gg_13_8_otus', 'rep_set_aligned', '85_otus.pynast.fasta'),
             fp)
         self.assertTrue(os.path.isfile(fp))
         self.assertTrue(os.path.isabs(fp))
