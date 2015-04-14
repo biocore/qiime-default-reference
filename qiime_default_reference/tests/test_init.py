@@ -52,7 +52,7 @@ class TestInit(unittest.TestCase):
 
         with open(fp, 'rb') as f:
             md5 = safe_md5(f).hexdigest()
-        self.assertEqual(md5, 'd85dcad4c62e22305e412c1be2f25987')
+        self.assertEqual(md5, '1de2e593b38041c5b3012220325b76fa')
 
     def test_get_template_alignment_column_mask(self):
         # make sure the literal Lane mask matches the real file's MD5 (without
