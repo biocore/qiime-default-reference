@@ -45,14 +45,14 @@ class TestInit(unittest.TestCase):
     def test_get_template_alignment(self):
         fp = get_template_alignment()
         self.assertIn(
-            os.path.join('gg_13_8_otus', 'rep_set_aligned', '85_otus.fasta'),
+            os.path.join('gg_13_8_otus', 'rep_set_aligned', '85_otus.pynast.fasta'),
             fp)
         self.assertTrue(os.path.isfile(fp))
         self.assertTrue(os.path.isabs(fp))
 
         with open(fp, 'rb') as f:
             md5 = safe_md5(f).hexdigest()
-        self.assertEqual(md5, 'd85dcad4c62e22305e412c1be2f25987')
+        self.assertEqual(md5, '1de2e593b38041c5b3012220325b76fa')
 
     def test_get_template_alignment_column_mask(self):
         # make sure the literal Lane mask matches the real file's MD5 (without

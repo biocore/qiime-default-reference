@@ -38,7 +38,7 @@ def get_template_alignment():
 
     """
     return _get_reference_data(
-        'gg_13_8_otus', 'rep_set_aligned', '85_otus.fasta')
+        'gg_13_8_otus', 'rep_set_aligned', '85_otus.pynast.fasta')
 
 
 def get_template_alignment_column_mask():
