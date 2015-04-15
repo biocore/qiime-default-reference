@@ -15,4 +15,4 @@
   * ``85_otus.pynast.fasta`` : ``1de2e593b38041c5b3012220325b76fa``
   * ``85_otus.fasta`` : ``6c571af57ab0f72af9288b72f6c50206``
 
- A blog post announcing this bug to our users was posted to the QIIME blog [here](https://qiime.wordpress.com/2015/04/15/qiime-1-9-0-bug-affecting-pynast-alignment-of-16s-amplicons-generated-with-non-515f806r-primers/).
+ We announced this bug to our users on the QIIME blog [here](https://qiime.wordpress.com/2015/04/15/qiime-1-9-0-bug-affecting-pynast-alignment-of-16s-amplicons-generated-with-non-515f806r-primers/).
