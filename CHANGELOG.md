@@ -1,5 +1,7 @@
 # qiime-default-reference changelog
 
+## Version 0.1.2-dev (changes since 0.1.2 release go here)
+
 ## Version 0.1.2
 
 ### Bug fixes
@@ -19,4 +21,9 @@
 
 ## Version 0.1.1
 
-Initial release.
+### Features
+* Added a default reference tree ([#10](https://github.com/biocore/qiime-default-reference/issues/10)).
+
+## Version 0.1.0
+
+Initial alpha release.
