@@ -67,6 +67,7 @@ setup(
     url='http://www.qiime.org',
     test_suite='nose.collector',
     packages=find_packages(),
+    install_requires=['six'],
     extras_require={'test': ['nose']},
     classifiers=classifiers,
     package_data={
