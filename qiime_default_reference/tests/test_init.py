@@ -1,6 +1,6 @@
 import os.path
 import unittest
-from StringIO import StringIO
+from io import StringIO
 
 from qiime_default_reference import (
     get_reference_sequences, get_reference_taxonomy, get_reference_tree,
@@ -67,7 +67,7 @@ class TestInit(unittest.TestCase):
     # See licenses/scikit-bio.txt for more details.
     def test_safe_md5(self):
         exp = 'ab07acbb1e496801937adfa772424bf7'
-        fd = StringIO(b'foo bar baz')
+        fd = StringIO('foo bar baz')
         obs = safe_md5(fd)
         self.assertEqual(obs.hexdigest(), exp)
         fd.close()

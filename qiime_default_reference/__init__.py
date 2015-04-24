@@ -87,7 +87,7 @@ def safe_md5(open_file, block_size=2 ** 20):
 
     Examples
     --------
-    >>> from StringIO import StringIO
+    >>> from io import StringIO
     >>> from qiime_default_reference import safe_md5
     >>> fd = StringIO("foo bar baz") # open file like object
     >>> x = safe_md5(fd)
