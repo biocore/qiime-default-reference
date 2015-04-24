@@ -12,7 +12,7 @@ from setuptools import find_packages, setup
 # don't preprocess (e.g., decompress) any data if the following modes are
 # invoked
 preprocess_data = all([e not in sys.argv
-                       for e in 'egg_info', 'sdist', 'register'])
+                       for e in ('egg_info', 'sdist', 'register')])
 
 __version__ = "0.1.2-dev"
 
@@ -67,6 +67,7 @@ setup(
     url='http://www.qiime.org',
     test_suite='nose.collector',
     packages=find_packages(),
+    install_requires=['six'],
     extras_require={'test': ['nose']},
     classifiers=classifiers,
     package_data={
