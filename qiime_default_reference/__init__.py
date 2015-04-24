@@ -87,9 +87,9 @@ def safe_md5(open_file, block_size=2 ** 20):
 
     Examples
     --------
-    >>> from io import BytesIO
+    >>> from six import BytesIO
     >>> from qiime_default_reference import safe_md5
-    >>> fd = BytesIO("foo bar baz") # open file like object
+    >>> fd = BytesIO(b"foo bar baz") # open file like object
     >>> x = safe_md5(fd)
     >>> x.hexdigest()
     'ab07acbb1e496801937adfa772424bf7'
