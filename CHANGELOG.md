@@ -2,6 +2,9 @@
 
 ## Version 0.1.2-dev (changes since 0.1.2 release go here)
 
+### Features
+* ``qiime-default-reference`` is now python 2/3 compatible.
+
 ## Version 0.1.2
 
 ### Bug fixes
