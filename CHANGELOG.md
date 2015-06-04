@@ -1,9 +1,9 @@
 # qiime-default-reference changelog
 
-## Version 0.1.2-dev (changes since 0.1.2 release go here)
+## Version 0.1.3
 
 ### Features
-* ``qiime-default-reference`` is now python 2/3 compatible.
+* ``qiime-default-reference`` is now Python 2/3 compatible.
 
 ## Version 0.1.2
 
