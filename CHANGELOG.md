@@ -1,5 +1,7 @@
 # qiime-default-reference changelog
 
+## Version 0.1.3-dev (changes since 0.1.3 release go here)
+
 ## Version 0.1.3
 
 ### Features
