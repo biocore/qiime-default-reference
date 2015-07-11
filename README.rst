@@ -46,6 +46,31 @@ Lane mask was originally available in `ARB <http://www.ncbi.nlm.nih.gov/pubmed/1
 
 Lane mask taken from `here <http://greengenes.lbl.gov/Download/Sequence_Data/lanemask_in_1s_and_0s>`_.
 
+Usage
+^^^^^
+
+``qiime-default-reference`` makes it very easy to access the Greengenes 97% OTUs and some other key pieces of Greengenes from within Python. After installing, you can do the following:
+
+.. code-block:: python
+
+    import qiime_default_reference
+
+    # Get the absolute filepath to the reference sequences in fasta format.
+    qiime_default_reference.get_reference_sequences()
+
+    # Get the absolute filepath to the PyNAST template alignment in fasta format.
+    qiime_default_reference.get_template_alignment()
+
+    # Get the absolute filepath to the reference phylogenetic tree in newick format.
+    qiime_default_reference.get_reference_tree()
+
+    # Get the absolute filepath to the reference taxonomy in tab-separated text format.
+    qiime_default_reference.get_reference_taxonomy()
+
+    # Get the alignment column mask (currently the Lane mask) as 1s and 0s.
+    # This will be str/bytes in Python 2 (they're the same), and bytes in Python 3.
+    qiime_default_reference.get_template_alignment_column_mask()
+
 Getting Help
 ^^^^^^^^^^^^
 Please post your questions about this repository/package on the `QIIME Forum <http://forum.qiime.org>`_.
