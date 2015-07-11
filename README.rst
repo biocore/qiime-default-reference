@@ -51,6 +51,8 @@ Usage
 
 ``qiime-default-reference`` makes it very easy to access the Greengenes 97% OTUs and some other key pieces of Greengenes from within Python. After installing, you can do the following::
 
+.. code-block:: python
+
     import qiime_default_reference
 
     # get the absolute filepath to the reference sequences in fasta format
