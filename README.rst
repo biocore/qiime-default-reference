@@ -58,6 +58,8 @@ Usage
     qiime_default_reference.get_template_alignment()
     # get the absolute filepath to the reference phylogenetic tree in newick format
     qiime_default_reference.get_reference_tree()
+    # get the absolute filepath to the reference taxonomy in tab-separated text format
+    qiime_default_reference.get_reference_taxonomy()
     # get the alignment column mask (currently the Lane mask) as a string of 1s and 0s
     qiime_default_reference.get_template_alignment_column_mask()
 
