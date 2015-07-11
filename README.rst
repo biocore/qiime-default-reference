@@ -58,7 +58,7 @@ Usage
     # get the absolute filepath to the reference sequences in fasta format
     qiime_default_reference.get_reference_sequences()
 
-    # get the absolute filepath to the aligned reference sequences in fasta format
+    # get the absolute filepath to the PyNAST template alignment in fasta format
     qiime_default_reference.get_template_alignment()
 
     # get the absolute filepath to the reference phylogenetic tree in newick format
