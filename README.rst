@@ -55,19 +55,20 @@ Usage
 
     import qiime_default_reference
 
-    # get the absolute filepath to the reference sequences in fasta format
+    # Get the absolute filepath to the reference sequences in fasta format.
     qiime_default_reference.get_reference_sequences()
 
-    # get the absolute filepath to the PyNAST template alignment in fasta format
+    # Get the absolute filepath to the PyNAST template alignment in fasta format.
     qiime_default_reference.get_template_alignment()
 
-    # get the absolute filepath to the reference phylogenetic tree in newick format
+    # Get the absolute filepath to the reference phylogenetic tree in newick format.
     qiime_default_reference.get_reference_tree()
 
-    # get the absolute filepath to the reference taxonomy in tab-separated text format
+    # Get the absolute filepath to the reference taxonomy in tab-separated text format.
     qiime_default_reference.get_reference_taxonomy()
 
-    # get the alignment column mask (currently the Lane mask) as a string of 1s and 0s
+    # Get the alignment column mask (currently the Lane mask) as 1s and 0s.
+    # This will be str/bytes in Python 2 (they're the same), and bytes in Python 3.
     qiime_default_reference.get_template_alignment_column_mask()
 
 Getting Help
