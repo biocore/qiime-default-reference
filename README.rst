@@ -49,7 +49,7 @@ Lane mask taken from `here <http://greengenes.lbl.gov/Download/Sequence_Data/lan
 Usage
 ^^^^^
 
-``qiime-default-reference`` makes it very easy to access the Greengenes 97% OTUs and some other key pieces of Greengenes from within Python. After installing, you can do the following::
+``qiime-default-reference`` makes it very easy to access the Greengenes 97% OTUs and some other key pieces of Greengenes from within Python. After installing, you can do the following:
 
 .. code-block:: python
 
